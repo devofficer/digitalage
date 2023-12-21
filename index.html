@@ -1,0 +1,709 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/x-icon" href="./assets/image/favicon.ico">
+    <title>Digitalage</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio"></script>
+    <script src="./assets/js/tailwind.config.js"></script>
+    <link rel="stylesheet" href="./assets/css/global.css" />
+    <link rel="stylesheet" href="./assets/css/header.css" />
+    <link rel="stylesheet" href="./assets/css/landing.css" />
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"
+    ></script>
+    <script src="./assets/js/home.js"></script>
+  </head>
+  <body>
+    <!---- header section -->
+    <header class="flex justify-center items-center" id="navbar">
+      <!-- navbar start -->
+      <nav
+        class="max-w-7xl px-2 xl:px-0 w-full flex justify-between items-center"
+      >
+        <div class="flex gap-2 items-center logo">
+          <img src="assets/image/logo.png" class="w-8 h-8" />
+          <h3 class="text-2xl font-medium text-white">Digitalage</h3>
+          <!-- burger start -->
+          <div
+            class="w-6 h-6 ml-1 cursor-pointer transition-all md:hidden hover:scale-105"
+            id="burger"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              data-slot="icon"
+              class="w-6 h-6"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+              />
+            </svg>
+          </div>
+          <!-- burger end -->
+        </div>
+        <!-- mobile navbar start -->
+        <div
+          class="hidden md:hidden w-full h-screen fixed top-0 left-0 bg-black/80"
+          id="backDrop"
+        ></div>
+        <div
+          class="md:hidden w-60 h-screen fixed top-0 -left-60 py-4 bg-purple-950"
+          id="mobileNav"
+        >
+          <div class="flex items-center gap-1 mb-3">
+            <img src="assets/image/logo.png" class="w-8 h-8" />
+            <h3 class="text-2xl font-medium text-white">Digitalage</h3>
+          </div>
+          <ul class="list-none flex flex-col gap-2 px-6">
+            <li class="text-sm text-white font-semibold cursor-pointer">
+              <a class="no-underline" href="./index.html">Home</a>
+            </li>
+            <li
+              class="text-sm text-gray-300 hover:text-gray-200 font-semibold cursor-pointer"
+            >
+              <a class="no-underline" href="./faq.html">Faq's</a>
+            </li>
+            <li
+              class="text-sm text-gray-300 hover:text-gray-200 font-semibold cursor-pointer"
+            >
+              <a class="no-underline" href="./contact.html">Contact</a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- mobile navbar end -->
+
+        <!-- desktop navbar start -->
+        <div class="hidden md:flex justify-center">
+          <ul class="list-none flex justify-center gap-8 items-center">
+            <li class="text-sm text-white font-semibold cursor-pointer">
+              <a class="no-underline" href="./index.html">Home</a>
+            </li>
+            <li
+              class="text-sm text-gray-300 hover:text-gray-200 font-semibold cursor-pointer"
+            >
+              <a class="no-underline" href="./faq.html">Faq's</a>
+            </li>
+            <li
+              class="text-sm text-gray-300 hover:text-gray-200 font-semibold cursor-pointer"
+            >
+              <a class="no-underline" href="./contact.html">Contact</a>
+            </li>
+          </ul>
+        </div>
+        <!-- desktop navbar end -->
+
+        <div
+          class="rounded bg-purple-500 px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-purple-400 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-purple-500 hover:scale-105 transition-all"
+        >
+          <a class="no-underline" href="./signup.html">Sign Up</a>
+        </div>
+      </nav>
+      <!-- navbar end -->
+    </header>
+
+    <!-- main start -->
+    <main>
+      <!-- banner section start -->
+      <div class="landing-banner">
+        <section class="section">
+          <div class="container px-6 xl:px-0 py-12 -mb-10">
+            <div class="grid grid-cols-12 gap-6">
+              <div class="col-span-12 lg:col-span-7 pt-12">
+                <div class="py-5">
+                  <div class="mb-4">
+                    <h5
+                      class="text-white opacity-90 font-semibold text-lg uppercase"
+                    >
+                      The Future of Social Media Starts Now
+                    </h5>
+                  </div>
+                  <div class="mb-4">
+                    <p class="text-white opacity-90 text-4xl font-semibold">
+                      <strong class="text-sky-400">Digitalage</strong> <br />
+                      A revolutionary social media platform
+                    </p>
+                  </div>
+                  <div class="mb-4">
+                    <p class="text-white opacity-90 text-base font-semibold">
+                      Digitalage is pioneering a revolutionary social media
+                      platform centered around elevating creators, protecting
+                      individual rights, and cultivating authentic communities.
+                    </p>
+                  </div>
+                  <div class="mb-8">
+                    <p class="text-white opacity-90 text-base font-semibold">
+                      Our platform is designed to provide transparency, ensure
+                      content integrity, foster meaningful connections, and
+                      enable equitable compensation.
+                    </p>
+                  </div>
+                  <button
+                    type="button"
+                    class="inline-flex items-center gap-x-2 rounded-md bg-purple-500 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-purple-400 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-purple-600"
+                  >
+                    Learn More
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke-width="1.5"
+                      stroke="currentColor"
+                      data-slot="icon"
+                      class="w-6 h-6"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M2.036 12.322a1.012 1.012 0 0 1 0-.639C3.423 7.51 7.36 4.5 12 4.5c4.638 0 8.573 3.007 9.963 7.178.07.207.07.431 0 .639C20.577 16.49 16.64 19.5 12 19.5c-4.638 0-8.573-3.007-9.963-7.178Z"
+                      />
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M15 12a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z"
+                      />
+                    </svg>
+                  </button>
+                </div>
+              </div>
+              <div
+                class="col-span-12 lg:col-span-5 hidden h-full lg:flex items-center"
+              >
+                <img src="./assets/image/landing/ads-woman.png" class="-mb-8" />
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+      <!-- banner section end -->
+      <!-- statistics section start -->
+      <section class="section">
+        <div class="container px-6 xl:px-0 py-12">
+          <div class="flex justify-center text-purple-500 mb-1">
+            <span class="section-heading uppercase font-bold text-lg">
+              Statistics
+            </span>
+          </div>
+          <h3 class="font-semibold text-2xl text-gray-700 mb-2 text-center">
+            More than 110+ Projects completed
+          </h3>
+          <p class="text-gray-400 text-base mb-12 font-normal text-center">
+            We are proud to have top class clients and customers, which
+            motivates us to work more on projects.
+          </p>
+          <div
+            class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-4"
+          >
+            <div class="col-span-1 mb-4">
+              <div class="p-4 text-center rounded-md bg-white border">
+                <div class="flex justify-center">
+                  <span
+                    class="px-3 py-3 rounded-full flex justify-center items-center w-max bg-purple-100 text-purple-500 mb-3"
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke-width="1.5"
+                      stroke="currentColor"
+                      data-slot="icon"
+                      class="w-6 h-6"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M21 12a2.25 2.25 0 0 0-2.25-2.25H15a3 3 0 1 1-6 0H5.25A2.25 2.25 0 0 0 3 12m18 0v6a2.25 2.25 0 0 1-2.25 2.25H5.25A2.25 2.25 0 0 1 3 18v-6m18 0V9M3 12V9m18 0a2.25 2.25 0 0 0-2.25-2.25H5.25A2.25 2.25 0 0 0 3 9m18 0V6a2.25 2.25 0 0 0-2.25-2.25H5.25A2.25 2.25 0 0 0 3 6v3"
+                      />
+                    </svg>
+                  </span>
+                </div>
+                <h3 class="font-semibold mb-0 text-gray-700 text-4xl">120+</h3>
+                <p class="mb-1 text-gray-500 text-sm">Projects</p>
+              </div>
+            </div>
+            <div class="col-span-1 mb-4">
+              <div class="p-4 text-center rounded-md bg-white border">
+                <div class="flex justify-center">
+                  <span
+                    class="px-3 py-3 rounded-full flex justify-center items-center w-max bg-purple-100 text-purple-500 mb-3"
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke-width="1.5"
+                      stroke="currentColor"
+                      data-slot="icon"
+                      class="w-6 h-6"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M18 7.5v3m0 0v3m0-3h3m-3 0h-3m-2.25-4.125a3.375 3.375 0 1 1-6.75 0 3.375 3.375 0 0 1 6.75 0ZM3 19.235v-.11a6.375 6.375 0 0 1 12.75 0v.109A12.318 12.318 0 0 1 9.374 21c-2.331 0-4.512-.645-6.374-1.766Z"
+                      />
+                    </svg>
+                  </span>
+                </div>
+                <h3 class="font-semibold mb-0 text-gray-700 text-4xl">20K+</h3>
+                <p class="mb-1 text-gray-500 text-sm">Clients</p>
+              </div>
+            </div>
+            <div class="col-span-1 mb-4">
+              <div class="p-4 text-center rounded-md bg-white border">
+                <div class="flex justify-center">
+                  <span
+                    class="px-3 py-3 rounded-full flex justify-center items-center w-max bg-purple-100 text-purple-500 mb-3"
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke-width="1.5"
+                      stroke="currentColor"
+                      data-slot="icon"
+                      class="w-6 h-6"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M2.25 18.75a60.07 60.07 0 0 1 15.797 2.101c.727.198 1.453-.342 1.453-1.096V18.75M3.75 4.5v.75A.75.75 0 0 1 3 6h-.75m0 0v-.375c0-.621.504-1.125 1.125-1.125H20.25M2.25 6v9m18-10.5v.75c0 .414.336.75.75.75h.75m-1.5-1.5h.375c.621 0 1.125.504 1.125 1.125v9.75c0 .621-.504 1.125-1.125 1.125h-.375m1.5-1.5H21a.75.75 0 0 0-.75.75v.75m0 0H3.75m0 0h-.375a1.125 1.125 0 0 1-1.125-1.125V15m1.5 1.5v-.75A.75.75 0 0 0 3 15h-.75M15 10.5a3 3 0 1 1-6 0 3 3 0 0 1 6 0Zm3 0h.008v.008H18V10.5Zm-12 0h.008v.008H6V10.5Z"
+                      />
+                    </svg>
+                  </span>
+                </div>
+                <h3 class="font-semibold mb-0 text-gray-700 text-4xl">
+                  $45.8M
+                </h3>
+                <p class="mb-1 text-gray-500 text-sm">Income Earned</p>
+              </div>
+            </div>
+            <div class="col-span-1 mb-4">
+              <div class="p-4 text-center rounded-md bg-white border">
+                <div class="flex justify-center">
+                  <span
+                    class="px-3 py-3 rounded-full flex justify-center items-center w-max bg-purple-100 text-purple-500 mb-3"
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke-width="1.5"
+                      stroke="currentColor"
+                      data-slot="icon"
+                      class="w-6 h-6"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M17.982 18.725A7.488 7.488 0 0 0 12 15.75a7.488 7.488 0 0 0-5.982 2.975m11.963 0a9 9 0 1 0-11.963 0m11.963 0A8.966 8.966 0 0 1 12 21a8.966 8.966 0 0 1-5.982-2.275M15 9.75a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z"
+                      />
+                    </svg>
+                  </span>
+                </div>
+                <h3 class="font-semibold mb-0 text-gray-700 text-4xl">1000</h3>
+                <p class="mb-1 text-gray-500 text-sm">Employees</p>
+              </div>
+            </div>
+            <div class="col-span-1 mb-4">
+              <div class="p-4 text-center rounded-md bg-white border">
+                <div class="flex justify-center">
+                  <span
+                    class="px-3 py-3 rounded-full flex justify-center items-center w-max bg-purple-100 text-purple-500 mb-3"
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke-width="1.5"
+                      stroke="currentColor"
+                      data-slot="icon"
+                      class="w-6 h-6"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 0 1 2.25-2.25h13.5A2.25 2.25 0 0 1 21 7.5v11.25m-18 0A2.25 2.25 0 0 0 5.25 21h13.5A2.25 2.25 0 0 0 21 18.75m-18 0v-7.5A2.25 2.25 0 0 1 5.25 9h13.5A2.25 2.25 0 0 1 21 11.25v7.5m-9-6h.008v.008H12v-.008ZM12 15h.008v.008H12V15Zm0 2.25h.008v.008H12v-.008ZM9.75 15h.008v.008H9.75V15Zm0 2.25h.008v.008H9.75v-.008ZM7.5 15h.008v.008H7.5V15Zm0 2.25h.008v.008H7.5v-.008Zm6.75-4.5h.008v.008h-.008v-.008Zm0 2.25h.008v.008h-.008V15Zm0 2.25h.008v.008h-.008v-.008Zm2.25-4.5h.008v.008H16.5v-.008Zm0 2.25h.008v.008H16.5V15Z"
+                      />
+                    </svg>
+                  </span>
+                </div>
+                <h3 class="font-semibold mb-0 text-gray-700 text-4xl">5+</h3>
+                <p class="mb-1 text-gray-500 text-sm">Years of Experience</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- statistics section end -->
+
+      <!-- difference section start -->
+      <section class="section bg-light-200">
+        <div class="container px-6 xl:px-0 py-12">
+          <div class="flex justify-center text-purple-500 mb-1">
+            <span class="section-heading uppercase font-bold text-lg">
+              Customization
+            </span>
+          </div>
+          <h3 class="font-semibold text-2xl text-gray-700 mb-2 text-center">
+            The Digitalage Difference
+          </h3>
+          <p class="text-gray-400 text-base mb-12 font-normal text-center">
+            There are several differences in the Digitalage.
+          </p>
+          <div class="grid grid-cols-8 justify-center align-center">
+            <div
+              class="col-span-8 md:col-span-3 flex justify-center items-center"
+            >
+              <img src="./assets/image/landing/difference.png" />
+            </div>
+            <div
+              class="col-span-8 md:px-0 md:col-span-5 flex flex-col gap-2"
+              x-data="{items: differences}"
+            >
+              <template x-for="item in items" :key="item.title">
+                <div class="flex gap-1">
+                  <span class="text-purple-500">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke-width="1.5"
+                      stroke="currentColor"
+                      data-slot="icon"
+                      class="w-6 h-6"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M9 12.75 11.25 15 15 9.75M21 12c0 1.268-.63 2.39-1.593 3.068a3.745 3.745 0 0 1-1.043 3.296 3.745 3.745 0 0 1-3.296 1.043A3.745 3.745 0 0 1 12 21c-1.268 0-2.39-.63-3.068-1.593a3.746 3.746 0 0 1-3.296-1.043 3.745 3.745 0 0 1-1.043-3.296A3.745 3.745 0 0 1 3 12c0-1.268.63-2.39 1.593-3.068a3.745 3.745 0 0 1 1.043-3.296 3.746 3.746 0 0 1 3.296-1.043A3.746 3.746 0 0 1 12 3c1.268 0 2.39.63 3.068 1.593a3.746 3.746 0 0 1 3.296 1.043 3.746 3.746 0 0 1 1.043 3.296A3.745 3.745 0 0 1 21 12Z"
+                      />
+                    </svg>
+                  </span>
+                  <div class="flex flex-col gap-1">
+                    <h5
+                      class="text-gray-600 text-base font-semibold"
+                      x-text="item.title"
+                    ></h5>
+                    <p class="text-gray-400 text-sm" x-text="item.message"></p>
+                  </div>
+                </div>
+              </template>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- difference section end -->
+      <!-- community section start -->
+      <section class="section landing-community">
+        <div class="container px-6 xl:px-0 py-12 relative z-20">
+          <div class="flex justify-center text-gray-100 mb-1">
+            <span class="section-heading-white uppercase font-bold text-lg">
+              Join Community
+            </span>
+          </div>
+          <h3 class="font-semibold text-2xl text-gray-100 mb-2 text-center">
+            Join Digitalage Community
+          </h3>
+          <p class="text-gray-200 text-base mb-8 font-normal text-center">
+            We invite creators, consumers, partners and investors to help us
+            reinvent social media technology for good. Sign up today to receive
+            updates and early access.
+          </p>
+          <div class="flex justify-center mb-8">
+            <button
+              type="button"
+              class="inline-flex items-center gap-x-2 rounded-md bg-purple-900 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-purple-800 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-purple-600"
+            >
+              Join Digitalage Now
+              <svg
+                class="-mr-0.5 h-5 w-5"
+                viewBox="0 0 20 20"
+                fill="currentColor"
+                aria-hidden="true"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z"
+                  clip-rule="evenodd"
+                />
+              </svg>
+            </button>
+          </div>
+          <div class="flex justify-center">
+            <p
+              class="text-gray-200 text-base font-normal text-center w-full sm:w-2/3"
+            >
+              By building an ethical platform focused on transparency and
+              putting principles first, Digitalage aims to restore trust in
+              social systems and online communities. The future starts now -
+              join us.
+            </p>
+          </div>
+        </div>
+      </section>
+      <!-- community section end -->
+      <!-- contact us section start -->
+      <section class="section">
+        <div class="container px-6 xl:px-0 py-12 relative z-20">
+          <div class="flex justify-center text-purple-500 mb-1">
+            <span class="section-heading uppercase font-bold text-lg">
+              Contact US
+            </span>
+          </div>
+          <h3 class="font-semibold text-2xl text-gray-700 mb-2 text-center">
+            Have you questions? We would love to hear from you.
+          </h3>
+          <p class="text-gray-600 text-base mb-8 font-normal text-center">
+            You can contact us anytime regarding any queries or deals,dont
+            hesitate to clear your doubts before trying our product.
+          </p>
+          <div class="grid grid-cols-8 gap-4">
+            <div class="col-span-8 md:col-span-4">
+              <iframe
+                title="map"
+                src="https://www.google.com/maps/embed"
+                class="w-full h-full rounded-md"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+              ></iframe>
+            </div>
+            <div class="col-span-8 md:col-span-4">
+              <form
+                action="#"
+                method="POST"
+                class="w-full px-12 py-8 border rounded-md bg-white"
+              >
+                <div class="grid grid-cols-1 gap-x-1 gap-y-1 sm:grid-cols-2">
+                  <div>
+                    <label
+                      for="first-name"
+                      class="block text-sm font-semibold leading-6 text-gray-700"
+                      >First name</label
+                    >
+                    <div class="mt-2.5">
+                      <input
+                        type="text"
+                        name="first-name"
+                        id="first-name"
+                        autocomplete="given-name"
+                        class="block w-full rounded-md border-0 px-3.5 py-2 text-gray-700 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-purple-600 sm:text-sm sm:leading-6"
+                      />
+                    </div>
+                  </div>
+                  <div>
+                    <label
+                      for="last-name"
+                      class="block text-sm font-semibold leading-6 text-gray-700"
+                      >Last name</label
+                    >
+                    <div class="mt-2.5">
+                      <input
+                        type="text"
+                        name="last-name"
+                        id="last-name"
+                        autocomplete="family-name"
+                        class="block w-full rounded-md border-0 px-3.5 py-2 text-gray-700 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-purple-600 sm:text-sm sm:leading-6"
+                      />
+                    </div>
+                  </div>
+
+                  <div class="sm:col-span-2">
+                    <label
+                      for="email"
+                      class="block text-sm font-semibold leading-6 text-gray-700"
+                      >Email</label
+                    >
+                    <div class="mt-2.5">
+                      <input
+                        type="email"
+                        name="email"
+                        id="email"
+                        autocomplete="email"
+                        class="block w-full rounded-md border-0 px-3.5 py-2 text-gray-700 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-purple-600 sm:text-sm sm:leading-6"
+                      />
+                    </div>
+                  </div>
+                  <div class="sm:col-span-2">
+                    <label
+                      for="message"
+                      class="block text-sm font-semibold leading-6 text-gray-700"
+                      >Message</label
+                    >
+                    <div class="mt-2.5">
+                      <textarea
+                        name="message"
+                        id="message"
+                        rows="4"
+                        class="block w-full rounded-md border-0 px-3.5 py-2 text-gray-700 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-purple-600 sm:text-sm sm:leading-6"
+                      ></textarea>
+                    </div>
+                  </div>
+                </div>
+                <div class="mt-2">
+                  <button
+                    type="submit"
+                    class="block w-full rounded-md bg-purple-500 px-3.5 py-2.5 text-center text-sm font-semibold text-white shadow-sm hover:bg-purple-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-purple-600"
+                  >
+                    Send Message
+                  </button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- contact us section end -->
+    </main>
+    <!-- main end -->
+
+    <!-- footer section -->
+    <footer class="section bg-gray-900">
+      <div class="container px-6 xl:px-0 py-12">
+        <div class="grid grid-cols-9 gap-8">
+          <div class="col-span-9 md:col-span-4">
+            <div class="flex gap-1 mb-4">
+              <img src="assets/image/logo.png" class="w-6 h-6" />
+              <h3 class="text-xl font-medium text-gray-200">Digitalage</h3>
+            </div>
+            <p class="text-sm font-normal text-gray-300">
+              We are reimagining social technology to put control back into the
+              hands of users - giving you unmatched authority over your personal
+              data and digital footprint.
+            </p>
+          </div>
+          <div class="col-span-4 md:col-span-2">
+            <div class="flex gap-1 mb-4">
+              <h3 class="text-xl font-medium text-gray-200 uppercase">Pages</h3>
+            </div>
+            <ul class="list-none flex flex-col gap-2 text-gray-300">
+              <li class="text-sm text-gray cursor-pointer">
+                <a class="no-underline" href="./index.html">Home</a>
+              </li>
+              <li class="text-sm text-gray cursor-pointer">
+                <a class="no-underline" href="./about.html">About Us</a>
+              </li>
+              <li class="text-sm text-gray cursor-pointer">
+                <a class="no-underline" href="./faq.html">Faq's</a>
+              </li>
+              <li class="text-sm text-gray cursor-pointer">
+                <a class="no-underline" href="./contact.html">Contact</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-span-5 md:col-span-3">
+            <div class="flex gap-1 mb-4">
+              <h3 class="text-xl font-medium text-gray-200 uppercase">
+                Contact
+              </h3>
+            </div>
+            <ul class="list-none flex flex-col gap-2 text-gray-300">
+              <li class="text-sm cursor-pointer">
+                <span class="flex items-center gap-2">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    data-slot="icon"
+                    class="w-4 h-4"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="m2.25 12 8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25"
+                    />
+                  </svg>
+                  <span>New York, NY 10023, United States</span>
+                </span>
+              </li>
+              <li class="text-sm cursor-pointer">
+                <span class="flex items-center gap-2">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    data-slot="icon"
+                    class="w-4 h-4"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M21.75 6.75v10.5a2.25 2.25 0 0 1-2.25 2.25h-15a2.25 2.25 0 0 1-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25m19.5 0v.243a2.25 2.25 0 0 1-1.07 1.916l-7.5 4.615a2.25 2.25 0 0 1-2.36 0L3.32 8.91a2.25 2.25 0 0 1-1.07-1.916V6.75"
+                    />
+                  </svg>
+
+                  <span>connect@digitalage.com</span>
+                </span>
+              </li>
+              <li class="text-sm cursor-pointer">
+                <span class="flex items-center gap-2">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    data-slot="icon"
+                    class="w-4 h-4"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 0 0 2.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 0 1-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 0 0-1.091-.852H4.5A2.25 2.25 0 0 0 2.25 4.5v2.25Z"
+                    />
+                  </svg>
+                  <span>+1 (800) 555-0199</span>
+                </span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div
+        class="px-4 pt-6 text-center border-t border-t-gray-800 text-gray-300 text-sm"
+      >
+        Copyright &copy; 2023
+        <span class="text-sky-500 text-purple">Digitalage</span>
+      </div>
+    </footer>
+    <div
+      class="hidden z-50 p-2 opacity-60 cursor-pointer hover:opacity-100 rounded-md text-white fixed bottom-4 right-4 bg-purple-500"
+      id="scrollToTop"
+    >
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke-width="1.5"
+        stroke="currentColor"
+        data-slot="icon"
+        class="w-6 h-6"
+      >
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          d="m4.5 15.75 7.5-7.5 7.5 7.5"
+        />
+      </svg>
+    </div>
+  </body>
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script src="./assets/js/global.js"></script>
+</html>
